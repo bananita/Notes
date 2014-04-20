@@ -8,14 +8,33 @@
 
 #import "MBNotesViewController.h"
 #import "MBDatabase.h"
+#import "MBNotesImporter.h"
+#import "MBNotesProvider.h"
 
 @interface MBNotesViewController ()
 {
     MBDatabase* database;
-    
 }
 @end
 
 @implementation MBNotesViewController
+
+- (void)viewDidLoad
+{
+    [self createDatabase];
+    [self importNotes];
+}
+
+- (void)createDatabase
+{
+    database = [[MBDatabase alloc] initWithDataModelName:@"Notes"];
+}
+
+- (void)importNotes
+{
+    MBNotesImporter* importer = [[MBNotesImporter alloc] initWithMainManagedObjectContext:database.mainManagedObjectContext];
+    
+    [importer importsNotesFromArray:[MBNotesProvider arrayWithNotes]];
+}
 
 @end
