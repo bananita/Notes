@@ -28,6 +28,7 @@
 		853C4F981903F49000352ECB /* MBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F971903F49000352ECB /* MBDatabase.m */; };
 		853C4F9B1903F69600352ECB /* MBNotesImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F9A1903F69600352ECB /* MBNotesImporter.m */; };
 		853C4F9E1903F71F00352ECB /* MBNotesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F9D1903F71F00352ECB /* MBNotesProvider.m */; };
+		853C4FA41903FB7B00352ECB /* MBNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FA31903FB7B00352ECB /* MBNoteCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		853C4F9A1903F69600352ECB /* MBNotesImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesImporter.m; sourceTree = "<group>"; };
 		853C4F9C1903F71F00352ECB /* MBNotesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesProvider.h; sourceTree = "<group>"; };
 		853C4F9D1903F71F00352ECB /* MBNotesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesProvider.m; sourceTree = "<group>"; };
+		853C4FA21903FB7B00352ECB /* MBNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNoteCell.h; sourceTree = "<group>"; };
+		853C4FA31903FB7B00352ECB /* MBNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNoteCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				853C4F9A1903F69600352ECB /* MBNotesImporter.m */,
 				853C4F9C1903F71F00352ECB /* MBNotesProvider.h */,
 				853C4F9D1903F71F00352ECB /* MBNotesProvider.m */,
+				853C4FA21903FB7B00352ECB /* MBNoteCell.h */,
+				853C4FA31903FB7B00352ECB /* MBNoteCell.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				853C4F9B1903F69600352ECB /* MBNotesImporter.m in Sources */,
 				853C4F6C1903F15600352ECB /* MBAppDelegate.m in Sources */,
 				853C4F9E1903F71F00352ECB /* MBNotesProvider.m in Sources */,
+				853C4FA41903FB7B00352ECB /* MBNoteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
