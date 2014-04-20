@@ -14,7 +14,6 @@
 		853C4F661903F15600352ECB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 853C4F641903F15600352ECB /* InfoPlist.strings */; };
 		853C4F681903F15600352ECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F671903F15600352ECB /* main.m */; };
 		853C4F6C1903F15600352ECB /* MBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F6B1903F15600352ECB /* MBAppDelegate.m */; };
-		853C4F6F1903F15600352ECB /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F6D1903F15600352ECB /* Notes.xcdatamodeld */; };
 		853C4F711903F15600352ECB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853C4F701903F15600352ECB /* Images.xcassets */; };
 		853C4F781903F15600352ECB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C4F771903F15600352ECB /* XCTest.framework */; };
 		853C4F791903F15600352ECB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C4F591903F15600352ECB /* Foundation.framework */; };
@@ -23,13 +22,14 @@
 		853C4F831903F15600352ECB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 853C4F811903F15600352ECB /* InfoPlist.strings */; };
 		853C4F851903F15600352ECB /* NotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F841903F15600352ECB /* NotesTests.m */; };
 		853C4F8F1903F1CE00352ECB /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853C4F8E1903F1CE00352ECB /* Notes.storyboard */; };
-		853C4F921903F1F600352ECB /* MBNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F911903F1F600352ECB /* MBNotesViewController.m */; };
-		853C4F951903F35E00352ECB /* MBNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F941903F35E00352ECB /* MBNote.m */; };
-		853C4F981903F49000352ECB /* MBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F971903F49000352ECB /* MBDatabase.m */; };
-		853C4F9B1903F69600352ECB /* MBNotesImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F9A1903F69600352ECB /* MBNotesImporter.m */; };
-		853C4F9E1903F71F00352ECB /* MBNotesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F9D1903F71F00352ECB /* MBNotesProvider.m */; };
-		853C4FA41903FB7B00352ECB /* MBNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FA31903FB7B00352ECB /* MBNoteCell.m */; };
-		853C4FA71903FCA000352ECB /* MBNotesFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FA61903FCA000352ECB /* MBNotesFetchedResultsController.m */; };
+		853C4FBE19040B3D00352ECB /* MBNotesFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FAD19040B3D00352ECB /* MBNotesFetchedResultsController.m */; };
+		853C4FBF19040B3D00352ECB /* MBNotesImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FAF19040B3D00352ECB /* MBNotesImporter.m */; };
+		853C4FC019040B3D00352ECB /* MBNotesProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FB119040B3D00352ECB /* MBNotesProvider.m */; };
+		853C4FC119040B3D00352ECB /* MBDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FB419040B3D00352ECB /* MBDatabase.m */; };
+		853C4FC219040B3D00352ECB /* MBNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FB619040B3D00352ECB /* MBNote.m */; };
+		853C4FC319040B3D00352ECB /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FB719040B3D00352ECB /* Notes.xcdatamodeld */; };
+		853C4FC419040B3D00352ECB /* MBNoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FBB19040B3D00352ECB /* MBNoteCell.m */; };
+		853C4FC519040B3D00352ECB /* MBNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4FBD19040B3D00352ECB /* MBNotesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		853C4F691903F15600352ECB /* Notes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notes-Prefix.pch"; sourceTree = "<group>"; };
 		853C4F6A1903F15600352ECB /* MBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBAppDelegate.h; sourceTree = "<group>"; };
 		853C4F6B1903F15600352ECB /* MBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBAppDelegate.m; sourceTree = "<group>"; };
-		853C4F6E1903F15600352ECB /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		853C4F701903F15600352ECB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		853C4F761903F15600352ECB /* NotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		853C4F771903F15600352ECB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,20 +61,21 @@
 		853C4F821903F15600352ECB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		853C4F841903F15600352ECB /* NotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTests.m; sourceTree = "<group>"; };
 		853C4F8E1903F1CE00352ECB /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
-		853C4F901903F1F600352ECB /* MBNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesViewController.h; sourceTree = "<group>"; };
-		853C4F911903F1F600352ECB /* MBNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesViewController.m; sourceTree = "<group>"; };
-		853C4F931903F35E00352ECB /* MBNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNote.h; sourceTree = "<group>"; };
-		853C4F941903F35E00352ECB /* MBNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNote.m; sourceTree = "<group>"; };
-		853C4F961903F49000352ECB /* MBDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDatabase.h; sourceTree = "<group>"; };
-		853C4F971903F49000352ECB /* MBDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDatabase.m; sourceTree = "<group>"; };
-		853C4F991903F69600352ECB /* MBNotesImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesImporter.h; sourceTree = "<group>"; };
-		853C4F9A1903F69600352ECB /* MBNotesImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesImporter.m; sourceTree = "<group>"; };
-		853C4F9C1903F71F00352ECB /* MBNotesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesProvider.h; sourceTree = "<group>"; };
-		853C4F9D1903F71F00352ECB /* MBNotesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesProvider.m; sourceTree = "<group>"; };
-		853C4FA21903FB7B00352ECB /* MBNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNoteCell.h; sourceTree = "<group>"; };
-		853C4FA31903FB7B00352ECB /* MBNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNoteCell.m; sourceTree = "<group>"; };
-		853C4FA51903FCA000352ECB /* MBNotesFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesFetchedResultsController.h; sourceTree = "<group>"; };
-		853C4FA61903FCA000352ECB /* MBNotesFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesFetchedResultsController.m; sourceTree = "<group>"; };
+		853C4FAC19040B3D00352ECB /* MBNotesFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesFetchedResultsController.h; sourceTree = "<group>"; };
+		853C4FAD19040B3D00352ECB /* MBNotesFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesFetchedResultsController.m; sourceTree = "<group>"; };
+		853C4FAE19040B3D00352ECB /* MBNotesImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesImporter.h; sourceTree = "<group>"; };
+		853C4FAF19040B3D00352ECB /* MBNotesImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesImporter.m; sourceTree = "<group>"; };
+		853C4FB019040B3D00352ECB /* MBNotesProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesProvider.h; sourceTree = "<group>"; };
+		853C4FB119040B3D00352ECB /* MBNotesProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesProvider.m; sourceTree = "<group>"; };
+		853C4FB319040B3D00352ECB /* MBDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBDatabase.h; sourceTree = "<group>"; };
+		853C4FB419040B3D00352ECB /* MBDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBDatabase.m; sourceTree = "<group>"; };
+		853C4FB519040B3D00352ECB /* MBNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNote.h; sourceTree = "<group>"; };
+		853C4FB619040B3D00352ECB /* MBNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNote.m; sourceTree = "<group>"; };
+		853C4FB819040B3D00352ECB /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		853C4FBA19040B3D00352ECB /* MBNoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNoteCell.h; sourceTree = "<group>"; };
+		853C4FBB19040B3D00352ECB /* MBNoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNoteCell.m; sourceTree = "<group>"; };
+		853C4FBC19040B3D00352ECB /* MBNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesViewController.h; sourceTree = "<group>"; };
+		853C4FBD19040B3D00352ECB /* MBNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,26 +138,12 @@
 		853C4F611903F15600352ECB /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				853C4F6A1903F15600352ECB /* MBAppDelegate.h */,
-				853C4F6B1903F15600352ECB /* MBAppDelegate.m */,
-				853C4F701903F15600352ECB /* Images.xcassets */,
-				853C4F6D1903F15600352ECB /* Notes.xcdatamodeld */,
+				853C4FAB19040B3D00352ECB /* Data Source */,
+				853C4FB219040B3D00352ECB /* Database */,
+				853C4FB919040B3D00352ECB /* MBNotesViewController */,
 				853C4F621903F15600352ECB /* Supporting Files */,
+				853C4F701903F15600352ECB /* Images.xcassets */,
 				853C4F8E1903F1CE00352ECB /* Notes.storyboard */,
-				853C4F901903F1F600352ECB /* MBNotesViewController.h */,
-				853C4F911903F1F600352ECB /* MBNotesViewController.m */,
-				853C4F931903F35E00352ECB /* MBNote.h */,
-				853C4F941903F35E00352ECB /* MBNote.m */,
-				853C4F961903F49000352ECB /* MBDatabase.h */,
-				853C4F971903F49000352ECB /* MBDatabase.m */,
-				853C4F991903F69600352ECB /* MBNotesImporter.h */,
-				853C4F9A1903F69600352ECB /* MBNotesImporter.m */,
-				853C4F9C1903F71F00352ECB /* MBNotesProvider.h */,
-				853C4F9D1903F71F00352ECB /* MBNotesProvider.m */,
-				853C4FA21903FB7B00352ECB /* MBNoteCell.h */,
-				853C4FA31903FB7B00352ECB /* MBNoteCell.m */,
-				853C4FA51903FCA000352ECB /* MBNotesFetchedResultsController.h */,
-				853C4FA61903FCA000352ECB /* MBNotesFetchedResultsController.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -165,6 +151,8 @@
 		853C4F621903F15600352ECB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				853C4F6A1903F15600352ECB /* MBAppDelegate.h */,
+				853C4F6B1903F15600352ECB /* MBAppDelegate.m */,
 				853C4F631903F15600352ECB /* Notes-Info.plist */,
 				853C4F641903F15600352ECB /* InfoPlist.strings */,
 				853C4F671903F15600352ECB /* main.m */,
@@ -189,6 +177,42 @@
 				853C4F811903F15600352ECB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		853C4FAB19040B3D00352ECB /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				853C4FAC19040B3D00352ECB /* MBNotesFetchedResultsController.h */,
+				853C4FAD19040B3D00352ECB /* MBNotesFetchedResultsController.m */,
+				853C4FAE19040B3D00352ECB /* MBNotesImporter.h */,
+				853C4FAF19040B3D00352ECB /* MBNotesImporter.m */,
+				853C4FB019040B3D00352ECB /* MBNotesProvider.h */,
+				853C4FB119040B3D00352ECB /* MBNotesProvider.m */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		853C4FB219040B3D00352ECB /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				853C4FB319040B3D00352ECB /* MBDatabase.h */,
+				853C4FB419040B3D00352ECB /* MBDatabase.m */,
+				853C4FB519040B3D00352ECB /* MBNote.h */,
+				853C4FB619040B3D00352ECB /* MBNote.m */,
+				853C4FB719040B3D00352ECB /* Notes.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		853C4FB919040B3D00352ECB /* MBNotesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				853C4FBA19040B3D00352ECB /* MBNoteCell.h */,
+				853C4FBB19040B3D00352ECB /* MBNoteCell.m */,
+				853C4FBC19040B3D00352ECB /* MBNotesViewController.h */,
+				853C4FBD19040B3D00352ECB /* MBNotesViewController.m */,
+			);
+			path = MBNotesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,16 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				853C4F951903F35E00352ECB /* MBNote.m in Sources */,
+				853C4FBE19040B3D00352ECB /* MBNotesFetchedResultsController.m in Sources */,
+				853C4FC019040B3D00352ECB /* MBNotesProvider.m in Sources */,
 				853C4F681903F15600352ECB /* main.m in Sources */,
-				853C4F921903F1F600352ECB /* MBNotesViewController.m in Sources */,
-				853C4F981903F49000352ECB /* MBDatabase.m in Sources */,
-				853C4F6F1903F15600352ECB /* Notes.xcdatamodeld in Sources */,
-				853C4F9B1903F69600352ECB /* MBNotesImporter.m in Sources */,
+				853C4FC319040B3D00352ECB /* Notes.xcdatamodeld in Sources */,
+				853C4FC119040B3D00352ECB /* MBDatabase.m in Sources */,
+				853C4FC219040B3D00352ECB /* MBNote.m in Sources */,
+				853C4FBF19040B3D00352ECB /* MBNotesImporter.m in Sources */,
+				853C4FC519040B3D00352ECB /* MBNotesViewController.m in Sources */,
 				853C4F6C1903F15600352ECB /* MBAppDelegate.m in Sources */,
-				853C4FA71903FCA000352ECB /* MBNotesFetchedResultsController.m in Sources */,
-				853C4F9E1903F71F00352ECB /* MBNotesProvider.m in Sources */,
-				853C4FA41903FB7B00352ECB /* MBNoteCell.m in Sources */,
+				853C4FC419040B3D00352ECB /* MBNoteCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +518,7 @@
 				853C4F8A1903F15600352ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		853C4F8B1903F15600352ECB /* Build configuration list for PBXNativeTarget "NotesTests" */ = {
 			isa = XCConfigurationList;
@@ -502,16 +527,17 @@
 				853C4F8D1903F15600352ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		853C4F6D1903F15600352ECB /* Notes.xcdatamodeld */ = {
+		853C4FB719040B3D00352ECB /* Notes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				853C4F6E1903F15600352ECB /* Notes.xcdatamodel */,
+				853C4FB819040B3D00352ECB /* Notes.xcdatamodel */,
 			);
-			currentVersion = 853C4F6E1903F15600352ECB /* Notes.xcdatamodel */;
+			currentVersion = 853C4FB819040B3D00352ECB /* Notes.xcdatamodel */;
 			path = Notes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
