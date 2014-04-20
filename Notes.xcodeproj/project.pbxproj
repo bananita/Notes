@@ -22,6 +22,8 @@
 		853C4F7B1903F15600352ECB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 853C4F5F1903F15600352ECB /* CoreData.framework */; };
 		853C4F831903F15600352ECB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 853C4F811903F15600352ECB /* InfoPlist.strings */; };
 		853C4F851903F15600352ECB /* NotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F841903F15600352ECB /* NotesTests.m */; };
+		853C4F8F1903F1CE00352ECB /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853C4F8E1903F1CE00352ECB /* Notes.storyboard */; };
+		853C4F921903F1F600352ECB /* MBNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 853C4F911903F1F600352ECB /* MBNotesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		853C4F801903F15600352ECB /* NotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NotesTests-Info.plist"; sourceTree = "<group>"; };
 		853C4F821903F15600352ECB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		853C4F841903F15600352ECB /* NotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTests.m; sourceTree = "<group>"; };
+		853C4F8E1903F1CE00352ECB /* Notes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notes.storyboard; sourceTree = "<group>"; };
+		853C4F901903F1F600352ECB /* MBNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBNotesViewController.h; sourceTree = "<group>"; };
+		853C4F911903F1F600352ECB /* MBNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBNotesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 				853C4F701903F15600352ECB /* Images.xcassets */,
 				853C4F6D1903F15600352ECB /* Notes.xcdatamodeld */,
 				853C4F621903F15600352ECB /* Supporting Files */,
+				853C4F8E1903F1CE00352ECB /* Notes.storyboard */,
+				853C4F901903F1F600352ECB /* MBNotesViewController.h */,
+				853C4F911903F1F600352ECB /* MBNotesViewController.m */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				853C4F8F1903F1CE00352ECB /* Notes.storyboard in Resources */,
 				853C4F661903F15600352ECB /* InfoPlist.strings in Resources */,
 				853C4F711903F15600352ECB /* Images.xcassets in Resources */,
 			);
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				853C4F681903F15600352ECB /* main.m in Sources */,
+				853C4F921903F1F600352ECB /* MBNotesViewController.m in Sources */,
 				853C4F6F1903F15600352ECB /* Notes.xcdatamodeld in Sources */,
 				853C4F6C1903F15600352ECB /* MBAppDelegate.m in Sources */,
 			);
@@ -309,7 +319,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -347,7 +357,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
