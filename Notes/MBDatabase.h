@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MBNote.h"
 
 @interface MBDatabase : NSObject
 
