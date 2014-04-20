@@ -12,6 +12,6 @@
 
 - (id)initWithMainManagedObjectContext:(NSManagedObjectContext*)context;
 
-- (void)importsNotesFromArray:(NSArray*)array;
+- (void)importsNotesFromArray:(NSArray*)notesToImport;
 
 @end

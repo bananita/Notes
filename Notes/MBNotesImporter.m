@@ -9,6 +9,8 @@
 #import "MBNotesImporter.h"
 #import "MBDatabase.h"
 
+static NSString* kMBEntityName = @"MBNote";
+
 @interface MBNotesImporter ()
 {
     NSManagedObjectContext* mainManagedObjectContext;
@@ -29,18 +31,24 @@
     return self;
 }
 
-- (void)importsNotesFromArray:(NSArray*)array
+- (void)importsNotesFromArray:(NSArray*)notesToImport
 {
     NSManagedObjectContext* context = [self createChildObjectContext];
     
     [context performBlock:^{
-        [array enumerateObjectsUsingBlock:^(NSDictionary* noteDictionary,
-                                            NSUInteger idx,
-                                            BOOL *stop) {
-            MBNote* note = [NSEntityDescription insertNewObjectForEntityForName:@"MBNote" inManagedObjectContext:context];
-            
+        NSDictionary* existingNotes = [self fetchExistingNotesInContext:context];
+        
+        [notesToImport enumerateObjectsUsingBlock:^(NSDictionary* noteDictionary,
+                                                    NSUInteger idx,
+                                                    BOOL *stop) {
             id noteId = noteDictionary[@"id"];
-            note.id = [self isObjectNull:noteId]? nil : noteId;
+            
+            MBNote* note = existingNotes[noteId];
+            
+            if (!note) {
+                note = [NSEntityDescription insertNewObjectForEntityForName:kMBEntityName inManagedObjectContext:context];
+                note.id = noteId;
+            }
             
             id text = noteDictionary[@"text"];
             note.text = [self isObjectNull:text]? nil : text;
@@ -60,6 +68,26 @@
     objectContext.parentContext = mainManagedObjectContext;
     
     return objectContext;
+}
+
+- (NSDictionary*)fetchExistingNotesInContext:(NSManagedObjectContext*)context
+{
+    NSFetchRequest* request = [NSFetchRequest new];
+    request.entity = [NSEntityDescription entityForName:kMBEntityName
+                                 inManagedObjectContext:context];
+    
+    NSArray* notes = [context executeFetchRequest:request
+                                            error:nil];
+    
+    NSMutableDictionary* existingNotes = [NSMutableDictionary new];
+    
+    [notes enumerateObjectsUsingBlock:^(MBNote* note,
+                                                NSUInteger idx,
+                                                BOOL *stop) {
+        existingNotes[note.id] = note;
+    }];
+    
+    return existingNotes;
 }
 
 - (BOOL)isObjectNull:(id)object
