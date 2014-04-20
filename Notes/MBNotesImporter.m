@@ -39,8 +39,11 @@
                                             BOOL *stop) {
             MBNote* note = [NSEntityDescription insertNewObjectForEntityForName:@"MBNote" inManagedObjectContext:context];
             
-            note.id = noteDictionary[@"id"];
-            note.text = noteDictionary[@"text"];
+            id noteId = noteDictionary[@"id"];
+            note.id = [self isObjectNull:noteId]? nil : noteId;
+            
+            id text = noteDictionary[@"text"];
+            note.text = [self isObjectNull:text]? nil : text;
         }];
         
         [context save:nil];
@@ -57,6 +60,11 @@
     objectContext.parentContext = mainManagedObjectContext;
     
     return objectContext;
+}
+
+- (BOOL)isObjectNull:(id)object
+{
+    return [object class] == [NSNull class];
 }
 
 @end
